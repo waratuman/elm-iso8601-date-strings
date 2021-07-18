@@ -1,8 +1,8 @@
-module Iso8601 exposing (fromTime, toTime, decoder, encode)
+module Iso8601 exposing (fromTime, toTime, decoder, encode, parser)
 
 {-| Convert between ISO-8601 date strings and POSIX times.
 
-@docs fromTime, toTime, decoder, encode
+@docs fromTime, toTime, decoder, encode, parser
 
 -}
 
@@ -334,6 +334,13 @@ iso8601 =
                         |. end
                     ]
             )
+
+
+{-| A Parser for use with elm/parser
+-}
+parser : Parser Time.Posix
+parser =
+    iso8601
 
 
 utcOffsetInMinutes : Parser Int
