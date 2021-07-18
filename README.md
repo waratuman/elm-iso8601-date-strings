@@ -1,5 +1,8 @@
 # elm-iso8601
 
+NOTE: This package is the same as [rtfeldman/elm-iso8601-date-strings](https://github.com/rtfeldman/elm-iso8601-date-strings)
+except that it also exposes the [Parser](https://package.elm-lang.org/packages/elm/parser/latest/Parser#Parser).
+
 Convert [ISO-8601 date strings](https://en.wikipedia.org/wiki/ISO_8601) into [POSIX times](https://package.elm-lang.org/packages/elm/time/latest/Time#Posix).
 
 This package takes the view that it is a mistake to use ISO-8601 strings as a
